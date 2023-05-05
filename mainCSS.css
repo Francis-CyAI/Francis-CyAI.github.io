@@ -1,0 +1,225 @@
+
+
+
+/* Tags */
+
+
+/* Classes */
+
+.main {
+    display: flex;
+    min-height: calc(100% - var(--header-height));
+}
+.container { 
+   width: 100%;
+   height: fit-content;
+   overflow-y: hidden;
+}
+.itemsDiv {
+    width: 100%;
+    z-index: 0;
+    opacity: 1;
+}
+.itemRowDiv, .serviceRowDiv {
+    display: flex;
+    width: calc(100% - 10px);
+    height: fit-content;
+    padding: 5px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.item {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 2px;
+    width: fit-content;
+    height: fit-content;
+}
+.itemImg {
+    min-width: 180px;
+    max-width: 200px;
+    height: 190px;
+}
+.minorDets {
+    font-size: 14px;
+    margin-top: 0px;
+    background-color: var(--field-bg-color);
+}
+.item-subMinorDets {
+    height: 30px;
+    font-size: 12px;
+    margin-top: -20px;
+
+}
+.item-mainDets {
+    font-size: 13px;
+    margin-top: -10px;
+    background-color: var(--field-bg-color);
+}
+.item-askBtn {
+    font-size: 15px;
+    width: fit-content;
+    border: 1px solid var(--default-color);
+    border-radius: 15px;
+    background-color: transparent;
+    padding: 5px;
+    margin-top: 0px;
+}
+
+/* Contact icons and buttons */
+.item-contact-btn, .service-contact-btn {
+    height: 25px;
+    border-radius: 20px;
+    color: white;
+    padding-left: 20px;
+    margin-top: -5pxpx;
+}
+.item-contact-btn {
+    width: 150px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.whatsapp-btn {
+    background-color: #009200;
+}
+.call-btn {
+    background-color: #004b92;
+}
+.call-icon, .whatsapp-icon {
+    width: 20px;
+    height: 17px;
+    margin-top: 3px;
+}
+.location-icon {
+    width: 20px;
+    height: 20px;
+}
+.search-results-div-holder {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    width: 100%;
+    height: calc(100% - var(--header-height));
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 2px;
+    z-index: -1;
+    opacity: 0;
+}
+.srcBtn {
+    top: 25px;
+    right: 50px;
+}
+.search-results-div {
+    position: absolute;
+    top: 75px;
+    left: 0;
+}
+.switchMenu {
+    position: -webkit-sticky;
+    position: sticky;
+    top: var(--header-height);
+    left: 0;
+    width: 100%;
+    height: 30px;
+    z-index: 2;
+}
+.sevicesDiv {
+    width: 0%;
+    z-index: -1;
+    opacity: 0;
+    height: 0;
+}
+.service {
+    width: fit-content;
+    height: 270px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 2px;
+}
+.serviceImg {
+    min-width: 220px;
+    max-width: 240px;
+    height: 230px;
+}
+.serviceName {
+    font-size: 15px;
+    margin: 0;
+    background-color: var(--field-bg-color);
+}
+.service-locat-info {
+    font-size: 13px;
+    margin: 2.5px;
+}
+.SVB-holder {
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    bottom: 149px;
+    right: 20%;
+    height: 144px;
+    width: 49px;
+    border-radius: 50px;
+} 
+.SVB-holder, .SV-btn {
+    border: 2px solid;
+    border-color: rgba(0, 0, 0, 0.2);
+} 
+:root {
+    --sv-btn-dimexn: 47px;
+    --sv-bottom: 151.25px;
+}
+.SV-btn {
+    position: fixed;
+    width:var(--sv-btn-dimexn);
+    height:var(--sv-btn-dimexn);
+    margin: 1px;
+    border-radius:var(--sv-btn-dimexn);
+}
+.SV-btn:nth-child(3) {
+    bottom: var(--sv-bottom);
+}
+.SV-btn:nth-child(2) {
+    bottom: calc(var(--sv-bottom) + 1 * var(--sv-btn-dimexn) + 1 * 2.5px);
+}
+.SV-btn:nth-child(1) {
+    bottom: calc(var(--sv-bottom) + 2 * var(--sv-btn-dimexn) + 2 * 2.5px);
+    margin-bottom: 2px;
+}
+.sv-btn-icon {
+    width: 60%;
+    height: 55%;
+    margin-top: 5%;
+    font-size: 12px;
+}
+.view-mode-notification {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 0;
+    z-index: -1;
+    opacity: 0;
+}
+.view-mode-notification span {
+    width: 100%;
+}
+.VMN-icon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 50px;
+    top: 10px;
+}
+.VM-msg {
+    position: absolute;
+    left: 100px;
+}
+
+
+/* IDs */

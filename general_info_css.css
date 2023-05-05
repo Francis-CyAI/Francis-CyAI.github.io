@@ -1,0 +1,34 @@
+/* gip - general info page */
+
+.gip-Body {
+   background-color: var(--default-bg-color);
+}
+.gip-campmar-icon {
+    width: auto;
+    height: 60px;
+    top: 20px;
+}
+.gip-main-heading, .gip-sub-heading  {
+    position: relative;
+    font-weight: bold;
+}
+.gip-main-heading {
+    font-size: 2em;
+    margin-bottom: 75px;
+}
+.gip-sub-heading {
+    left: 50px;
+    font-size: 1.3em;
+}
+.gip-sub-heading, .gip-text {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.info-footer {
+    padding-left: 2%;
+    padding-right: 2%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: black;
+}

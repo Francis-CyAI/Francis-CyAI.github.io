@@ -1,0 +1,122 @@
+.formHolder {
+    position: absolute;
+    top: 85px;
+    width: 95%;
+    height: 305px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+}
+.log-div {
+    top: 100px;
+    width: 370px;
+    height: 400px;
+    border-radius: 20px;
+    opacity: 1;
+}
+.log-div * {
+    position: absolute;
+}
+.logBackBtn {
+    font-size: 35px;
+    top: 10px;
+    left: 10px;
+}
+.logForm, .logForm * {
+    position: absolute;
+}
+.logForm:nth-child(1) {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    z-index: 0;
+}
+.logForm:nth-child(2) {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    z-index: -1;
+}
+.logForm label {
+    position: absolute;
+    left: 15px;
+}
+.logForm label, .logForm label * {
+    font-size: 18px;
+}
+.logInput {
+    min-width: 140px;
+    max-width: 170px;
+    height: auto;
+    border-color: transparent;
+    border-radius: 15px;
+}
+.log-select {
+    min-width: fit-content;
+}
+.log-other-locat-input {
+    min-width: 200px;
+    max-width: 240px;
+}
+.log-locat-label {
+    opacity: 0;
+}
+.log-locat-cover {
+    position: absolute;
+    left: 15px;
+    top: 185px;
+    width: 250px;
+    height: 35px;
+}
+.logForm label:nth-child(1) {
+    top: 30px;
+}
+.logForm label:nth-child(2) {
+    top: 70px;
+}
+.logForm label:nth-child(3) {
+    top: 110px;
+}
+.logForm label:nth-child(4) {
+    top: 150px;
+}
+.logForm label:nth-child(5) {
+    top: 190px;
+}
+.logForm label:nth-child(6) {
+    top: 240px;
+}
+.logForm label:nth-child(7) {
+    top: 290px;
+}
+.logGoBtn {
+    top: 120px;
+    right: 95px;
+    width: 45px;
+    height: 32px;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid var(--default-color);
+    border-radius: 15px;
+}
+.sign-span {
+    top: 61px;
+    width: 180px;
+    height: 50px;
+}
+.signBtn {
+    width: 90px;
+    font-size: 16px;
+    border-color: transparent;
+
+}
+.signBtn:nth-child(1) {
+    left: 0;
+}
+.signBtn:nth-child(2) {
+    left: 89px;
+}
+#signupForm .logGoBtn {
+    top: 250px;
+    right: 25px;
+}

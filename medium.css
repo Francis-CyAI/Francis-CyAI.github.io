@@ -1,0 +1,95 @@
+/**CSS file for screen sizes > 560px but < 820px **/
+
+:root {
+    --header-height: 100px;
+    --min-menu-height: calc(100% - var(--header-height));
+    --menu-from-above: 40px;
+    --menu-button-space: 45px;
+
+    --control-tab-top: 200px;
+    --control-tab-height: 300px;
+    --control-tab-width: 75%;
+    --crl-tab-surround-width: 95%;
+    --ctrl-tab-surround-top: 200px;
+    --ctrl-tab-surround-height: calc(var(--control-tab-height) + var(--control-tab-top) - 15px);
+}
+
+/*Tags*/
+* {
+    font: 19px "consolas", sans-serif;
+}
+
+header {
+    height: var(--header-height);
+}
+
+
+/*Class*/
+.alerter {
+    width: 50%;
+}
+.campmarIcon {
+    width: 240px;
+    height: 40px;
+}
+
+.dashboard {
+    height: 30px;
+    bottom: 5px;
+}
+.gip-sub-heading, .gip-text {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.nav-help-win {
+    width: 85%;
+}
+.searcherBtn {
+    /*20px wide*/
+    left: 170px;
+}
+.searchBox {
+    left: 218px;
+    width: 150px;
+    text-align: center;
+}
+.searchBox:hover {
+    width: 250px;
+}
+.tile-holder {
+    top: calc(var(--control-tab-height) +var(--control-tab-top) + 50px);
+    height: 130px;
+    width: calc(6 * 10px + 6 * var(--tile-dimension) + 30px); 
+    border-radius: 20px;
+}
+.topSpace {
+    height: calc( 5px + var(--header-height));
+}
+.user-info-tile-holder {
+    width: 500px;
+}
+.user-info-save-btn {
+    bottom: 50px;
+}
+.user-info-large-tile {
+    width: 250px;
+}
+.user-info-small-tile {
+    height: 120px;
+}
+
+
+/*IDs*/
+#funcPanel button, .searcherBtn, .searchBox {
+    position: absolute;
+}
+
+#funcPanel button:nth-child(1) {
+    left: 20px;
+    /*Each icon is 50px wide at most*/
+}
+#menuBtn {
+    /* menu button */
+    right: 70px; 
+}
+

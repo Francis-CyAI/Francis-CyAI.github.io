@@ -1,0 +1,93 @@
+:root {
+    --default-color: #664;
+    --default-bg-color: #ddd;
+    --tip-text-green: rgb(23, 136, 0);
+    --field-bg-color: rgba(220, 220, 220, .2);
+
+    --loader-outer-color: var(--default-color);
+    --loader-inner-color: rgb(13, 155, 37);
+}
+
+* {
+    color: var(--default-color);
+}
+.add-tip-text {
+    color: rgb(23, 136, 0);  
+}
+.add-input {
+    background-color: #eee;
+}
+.add-header {
+    color: #01111D;
+}
+.alerter {
+    background-color: white;
+    color: lightgray;
+}
+.alerter p {
+    color: darkgray;
+    font-size: 22px;
+}
+.specialText1 {
+    color: rgb(100, 100, 70);
+}
+.bg1 {
+    background-color: rgb(248, 248, 250);
+}
+.bg2 {
+    background-color: var(--default-bg-color);
+}
+.bg3 {
+    background-color: rgb(103, 103, 117);
+}
+.bg4 {
+    background-color: #aaa;
+}
+.log-div {
+    background-color: #aaa;
+}
+.logBackBtn {
+    color: #eee;
+}
+.logForm label {
+    color: #aaa;
+}
+.logInput {
+    background-color: #fff;
+    color: gray;
+}
+.logGoBtn {
+    border-color: #aaa;
+    color: #aaa;
+}
+.notif-window h2 {
+    color: #eee;
+}
+.searchBox, .searcherBtn {
+    color: darkgray;
+    border: 2px darkgray solid;
+}
+.searchBox {
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.sign-bg, .signBtn, .formHolder {
+    background-color: #eee;
+}
+.signBtn:nth-child(1) {
+    background-color: #eee;
+    color: #aaa;
+}
+.signBtn:nth-child(2) {
+    background-color: #aaa;
+    color: #fff;
+}
+.SVB-holder, .SV-btn {
+    background-color: rgba(240, 240, 240, 0.8);
+} 
+.view-mode-notification {
+    background-color: #ddd;
+}
+
+
+/*IDs*/

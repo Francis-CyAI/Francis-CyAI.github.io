@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Francis Kalunga">
+        <meta name="description" content="Campmar aims at maximizing customer outreach within university and college campuses, and outside.">
+        <meta name="keywords" content="university, college, trade, services, clothing, sneakers, phone, smartphone, computer, laptop, accessories, bag, accomodation, unza, cbu, evelyn, mulungushi, cavendish">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="theme-color" content="black">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        <link rel="stylesheet" href="general.css">
+        <!--Theme stylesheet below-->
+        <link id="styleSheetLink" rel="stylesheet" href="">
+        <script src="theme.js"></script>
+        <script src="userTheme.js" defer></script>
+        <link rel="stylesheet" href="userCSS.css">
+        <link rel="stylesheet" media="screen and (max-width: 560px)" href="small.css">
+        <link rel="stylesheet" media="screen and (min-width: 560.01px) and (max-width: 820px)" href="medium.css">
+        <link rel="stylesheet" media="screen and (min-width: 820.01px)" href="large.css">
+        <script src="promoted.js" async></script>
+        <script src="activity.js" async></script>
+
+        <title>User</title>
+    </head>
+
+    <body class="userBody"> 
+
+
+        <header class="midBackDropBlur">
+            
+            <img id="siteLogo"  class="campmarIcon" src="icons/eclipse_campmar_icon.png"/>  
+
+            <div id="funcPanel" class="dashboard">
+                <!--Functionality panel, much like a dashboard-->
+                <button id="logStat" title="log status" class="icon">
+                    <img id="logStatIcon" src="icons/logged_in_icon.png" class="iconImg" width="25px" height="25px" alt="log:"/>
+                    <!--Login icon is fixed because by virtue of having access to this page, you're logged  in-->
+                </button>
+                <h3 class="userText1 user-name">Welcome, <span class="userText1" id="userName">User</span></h3>
+                <button id="menuBtn" title="Menu" class="icon link">
+                    <hr id="line1" class="menuLine mlFirst">
+                    <hr id="line2" class="menuLine mlSecond">
+                </button>
+            </div>
+        </header>
+
+
+        <div id="menu" class="midBackDropBlur menuBar">
+            <button class="specialIcon link userText1" id="logBtn" title="Log out">
+                <img class="iconImg" width="25px" height="30px" alt=" log status" src="icons/log_out_icon.png"/>&nbsp; sign out
+            </button>
+            <button class="specialIcon link userText1" id="catBtn" title="View all categories">
+                <img class="iconImg " width="25px" height="25px" src="icons/eclipse_category_icon.png" />&nbsp; Categories
+            </button>
+            <button class="specialIcon link userText1" id="helpBtn" title="Find help on navigation and other">
+                <img class="iconImg" width="25px" height="25px" src="icons/eclipse_help_icon.png" />&nbsp; Help
+            </button>
+            <button class="specialIcon link userText1" id="aboutBtn" title="More about Campmar">
+                <img class="iconImg" width="25px" height="25px" src="icons/eclipse_about_icon.png" />&nbsp; About
+            </button>
+
+        </div> 
+
+
+
+        <div id="navHelpWH" class="midBackDropBlur centeredTB nav-help-win-holder">
+            <a href="javascript:void(0)" onclick="closeNavHelp()" class="specialIcon close-btn">
+                <img src="icons/close_icon.png" class="close-btn-icon" />
+            </a>
+
+            <div id="navHelpWin" class="centered nav-help-win">
+                <ol>
+                    <li>
+                        <a href="#i&s-switch" id="i&s-switchHlLink" class="underlined">Switching between Items and Services</a> 
+                    </li>
+                    <li>
+                        <a href="#vfs" id="vfsHlLink" class="underlined">Viewing Service details</a> 
+                    </li>
+                    <li>
+                        <a href="#upload-i&s" id="upload-i&sHlLink" class="underlined">Uploading Items and Accessing Personal Information</a> 
+                    </li>
+                    <li>
+                        <a href="#log-stat" id="log-statHlLink" class="underlined">Log Status</a> 
+                    </li>
+                    <li>
+                        <a href="#sign-i&u" id="sign-i&uHlLink" class="underlined">Sign In/Up</a>
+                    </li>
+                    </ol>
+                    
+                    <p id="i&s-switch">
+                        To switch views between Items and Services, simply click on either Items or Services in the main section.
+                    </p>
+                    <p id="vfs">
+                        To view the full Service details, simply tap on the service (or any service, or area on the services section) and click the Expanded Service View button, which is the button atop the list. To hide the services details for easier scrolling, simply click on the Retracted View button, which is the button in the middle of the array of the pop-up buttons. To hide the pop-up, simply click on the close (X) button.
+                    </p>
+                    <p id="upload-i&s">
+                        To upload items and services, as well as access your personal information, simply click on the menu icon in the top right part of your screen, and then click on the large, round (User) icon.
+                    </p>
+                    <p id="log-stat">
+                        To view your log status, simply click on the colored, small, round (User) icon in the top left part of your screen.
+                    </p>
+                    <p id="sign-i&u">
+                        To sign up or log in, click on the menu icon then click on the User icon. You will be redirected to the sign in/up page if you're not logged in.
+                    </p>
+            </div>
+        </div>
+
+
+
+        <div id="miniMenu" class="midBackDropBlur miniMenuBar">
+            <button id="closeMiniMenuBtn" class="specialIcon link mmCloseBtn close-btn">
+                <img src="icons/close_icon.png" class="close-btn-icon" />
+            </button>
+
+            <div id="contentContainer" class="centerContent mmContainer">
+                
+            </div>
+        </div> 
+
+
+
+
+        <div id="cover" class="lowBackDropBlur bgCover"></div>
+
+
+        
+        <div id="miniCover" class="lowBackDropBlur miniBgCover"></div>
+
+
+        <div id="alertBox" class="alerter">
+            <hr>
+            <p id="alertMsg" class="centerContent message">
+                alert message
+            </p>
+            <hr>
+        </div>
+ 
+
+
+        <div class="surround control-tab-surround"></div>
+
+        <div class="control-tab">
+            <div class="centered centerContent control-visual-info-port">
+                <span id="" class="control-info-tile">
+                    <img class="centered control-info-icon" src="icons/listed_items_icon.png">
+                    <p class="centerContent control-info-h-line">Listed Items:</p>
+                    <p class="centerContent control-info-p-line">0</p>
+                </span>
+                <span id="" class="control-info-tile">
+                    <img class="centered control-info-icon" src="icons/listed_services_icon.png">
+                    <p class="centerContent control-info-h-line">Listed Services:</p>
+                    <p class="centerContent control-info-p-line">0</p>
+                </span>
+            </div>
+        </div>
+
+       <div class="surround tile-holder">
+        <!--We put functionality buttons in here-->
+
+            <button id="openNWBtn" class="clickable tile btn-1">
+                <img src="icons/smartphone_notifications_icon.png" alt="notifications" class="title-icon not-icon">
+            </button>
+            <button id="openAIWBtn" class="clickable tile btn-2">
+                <img src="icons/add_item_icon.png" alt="+ item" class="title-icon add-i-icon">
+            </button>
+            <button id="openASWBtn" class="clickable tile btn-3">
+                <img src="icons/add_service_icon.png" alt="+ service" class="title-icon add-s-icon">
+            </button>
+            <button id="openUIWBtn" class="clickable tile btn-4">
+                <img src="icons/user_profile_icon.png" alt="user info" class="title-icon user-dets-icon">
+            </button>
+            <button id="goHomeBtn" class="clickable tile btn-5">
+                <img src="icons/home_icon.png" alt="home" class="title-icon home-icon">
+            </button>
+            <button id="delAccBtn" class="clickable tile btn-6">
+                <img src="icons/delete_account_icon.png" alt="delete acc" class="title-icon del-acc-icon">
+            </button>
+
+       </div>
+
+       
+
+        <div id="notifWindHolder" class="bg1 centeredTB add-window-holder notif-window">
+            <button id="NWHCloseBtn" class="specialIcon link close-btn">
+                <img src="icons/close_icon.png" class="close-btn-icon" />
+            </button>
+
+            <h2 class="centered centerContent">notifications</h2>
+
+            <p class="centered centerContent">Subscribe to be notified when an item is added</p>
+
+            <div id="NIHCover" class="notif-item-holder-cover"></div>
+            <div class="notif-item-holder">
+                <span class="notif-item">
+                    <input type="checkbox" id="" class="notif-cb">
+                    <label class="notif-label">Apparel</label>
+                </span>
+                <span class="notif-item">
+                    <input type="checkbox" id="" class="notif-cb">
+                    <label class="notif-label">Auto</label>
+                </span>
+                <span class="notif-item">
+                    <input type="checkbox" id="" class="notif-cb">
+                    <label class="notif-label">Electronics</label>
+                </span>
+                <span class="notif-item">
+                    <input type="checkbox" id="" class="notif-cb">
+                    <label class="notif-label">Fashion</label>
+                </span>
+                <span class="notif-item">
+                    <input type="checkbox" id="" class="notif-cb">
+                    <label class="notif-label">Foods</label>
+                </span>
+                <span class="notif-item">
+                    <input type="checkbox" id="" class="notif-cb">
+                    <label class="notif-label">Footwear</label>
+                </span>
+                <span class="notif-item">
+                    <input type="checkbox" id="" class="notif-cb">
+                    <label class="notif-label">Health</label>
+                </span>
+                <span class="notif-item">
+                    <input type="checkbox" id="" class="notif-cb">
+                    <label class="notif-label">Sport</label>
+                </span>
+            </div>
+
+           <button id="SNIBtn" class="link centered centerContent notif-info-save-btn">Save</button> 
+       </div>
+
+
+        <div id="addItemHolder" class="bg1 centeredTB add-window-holder">
+             <button id="AIWHCloseBtn" class="specialIcon link close-btn">
+                <img src="icons/close_icon.png" class="close-btn-icon" />
+             </button>
+
+            <h3 class="centered add-header">add an item</h3>
+
+            <p class="centerContent add-tip-text">Refresh the page to start afresh!</p>
+
+            <form id="addItemForm" class="add-form">
+                <label>Category:
+                    <select class="add-input" id="catChoice">
+                        <option label="Choose" value="">
+                        <option label="Apparel" value="apparel">
+                        <option label="Auto" value="auto">
+                        <option label="Electronics" value="electronics">
+                        <option label="Fashion" value="fashion">
+                        <option label="Foods" value="foods">
+                        <option label="Footwear" value="footwear">
+                        <option label="Health" value="health">
+                        <option label="Sport" value="sport">
+                        <option label="Other" value="other">
+                    </select>
+                </label>                  
+            </form>
+
+            <button  id="uploadItemBtn" class="add-go-btn add-btn">Go</button>
+        </div>
+
+
+        <div id="addServiceHolder" class="bg1 centeredTB add-window-holder">
+            <button id="ASWHCloseBtn" class="specialIcon link close-btn">
+                <img src="icons/close_icon.png" class="close-btn-icon" />
+            </button>
+
+            <h3 class="centered add-header">add a service</h3>
+
+           <p class="centerContent add-tip-text">Refresh the page to start afresh!</p>
+
+           <form id="addServiceForm" class="add-form">
+                <label>Service Name: <input type="text" class="add-input add-service-input" id="serviceName"></label>
+                <label>Location: <input type="text" class="add-input add-service-input" id="serviceLocation" placeholder="skip if same as default"></label>
+                <label>WhatsApp Business Number: <input type="tel" class="add-input add-service-input" id="servicePhoneNumber" placeholder="skip if same as default"></label>
+                <label>Phone Number: <input type="tel" class="add-input add-service-input" id="servicePhoneNumber" placeholder="skip if same as default"></label>
+                <label>Profile Picture '.png/.jpg':<input type="file" accept="image/png, image/jpg, image/jpeg" class="add-input add-img-input" label="Tap to select" required></label>
+                <label class="add-hours-label">Working Hours:
+                </label>
+                <label>
+                  <p class="add-label-p add-p">Weekdays:</p>
+                  <input type="text" size="5" class="add-input add-in add-time-from" id="" placeholder="08:00" required>
+                  <span class="add-time-sep"> - </span>
+                  <input type="text" size="5" class="add-input add-in add-time-to" id="" placeholder="18:00" required>  
+                </label>
+                <label>
+                    <p class="add-label-p add-p">Saturdays:</p>
+                    <input type="text" size="5" class="add-input add-in add-time-from" id="" placeholder="08:00">
+                    <span class="add-time-sep"> - </span>
+                    <input type="text" size="5" class="add-input add-in add-time-to" id="" placeholder="16:00">
+                </label>
+                <label>
+                    <p class="add-label-p add-p">Sundays:</p>
+                    <input type="text" size="5" class="add-input add-in add-time-from" id="" placeholder="08:00">
+                    <span class="add-time-sep"> - </span>
+                    <input type="text" size="5" class="add-input add-in add-time-to" id="" placeholder="14:00">
+                </label>
+                <label>
+                    <p class="add-label-p add-p">Holidays:</p>
+                    <input type="text" size="5" class="add-input add-in add-time-from" id="" placeholder="08:00">
+                    <span class="add-time-sep"> - </span>
+                    <input type="text" size="5" class="add-input add-in add-time-to" id="" placeholder="14:00">
+                </label>
+                <label>Details:
+                    <textarea class="add-input add-service-input add-text-area" id="itemDets" placeholder="Pull down bottom-right corner to adjust"></textarea>
+                </label>
+           </form>
+
+           <button  id="uploadServiceBtn" class="add-go-btn add-btn">Go</button>
+       </div>
+      
+
+       <div id="userInfoDiv" class="highBackDropBlur centeredTB user-info-div">
+            <div class="centered user-info-tile-holder">
+                <button id="UIWCloseBtn" class="specialIcon close-btn">
+                    <img src="icons/close_icon.png" class="close-btn-icon" />
+                </button>
+                <span class="centered user-info-tile user-info-large-tile">
+                    <img src="icons/user.png" class="centered user-info-large-icon">
+                    <p class="centerContent user-info-title">
+                        Username
+                    </p>
+                    <p id="" class="underlined centerContent user-info-field" contenteditable="true">
+                        Username
+                    </p>
+                </span>
+
+                <span class="user-info-tile user-info-small-tile u-s-t-1">
+                    <img src="icons/phone-book.png" class="centered user-info-small-icon" alt="phone number">
+                    <p class="centerContent user-info-title">
+                        Phone Number
+                    </p>
+                    <p id="" class="underlined centerContent user-info-field" contenteditable="true">
+                    07********
+                    </p>
+                </span>
+                <span class="user-info-tile user-info-small-tile u-s-t-2">
+                    <img src="icons/whatsapp.png" class="centered user-info-small-icon" alt="whatsapp number">
+                    <p class="centerContent user-info-title">
+                        WhatsApp number
+                    </p>
+                    <p id="" class="underlined centerContent user-info-field" contenteditable="true">
+                    07********
+                    </p>
+                </span>
+                <span class="user-info-tile user-info-small-tile u-s-t-3">
+                    <img src="icons/map.png" class="centered user-info-small-icon" alt="location">
+                    <p class="centerContent user-info-title">
+                        Location
+                    </p>
+                    <p id="" class="underlined centerContent user-info-field" contenteditable="true">
+                    location
+                    </p>
+                </span>
+                <span class="user-info-tile user-info-small-tile u-s-t-4">
+                    <img src="icons/password.png" class="centered user-info-small-icon" alt="password">
+                    <p class="centerContent user-info-title">
+                        Password
+                    </p>
+                    <p id="" class="underlined centerContent user-info-field" contenteditable="true">
+                    password
+                    </p>
+                    <label class="pw-view-label">show &nbsp;
+                        <input id="" type="checkbox" class="pw-view-checkbox">
+                    </label>
+                </span>
+            </div>
+            <button id="UISBtn" class="link centered centerContent user-info-save-btn">Save Changes</button>
+        </div>
+
+
+        <div id="delAlertBox" class="alerter del-alert">
+            <hr>
+            <p class="centerContent message del-alert-msg">
+                Are you sure you'd like to delete your account?
+            </p>
+            <span class="del-btn-holder">
+                <button id="yedDelAccBtn" class="link del-btn del-yes-btn">Yes</button>
+                <button id="cancelDelAccBtn" class="link del-btn del-cancel-btn">Cancel</button>
+            </span>
+            <hr>
+        </div>
+
+
+        <div class="bg3 logFooter">
+            <p class="specialText2">Zambia</p>
+            <p class="specialText2">Copyright &copy; 2023 Campmar, Inc. All rights reserved.</p>
+            <nav>
+            <a class="noUnderline link specialText2" href="privacy_policy.html">Privacy Policy &nbsp; | &nbsp; </a>
+            <a class="noUnderline link specialText2" href="terms_of_use.html">Terms of Use</a>
+            </nav>
+        </div>
+        
+        <script src="control.js"></script>
+        <script src="userControl.js"></script>
+        
+        <script src="ui.js"></script>
+        <script src="userUi.js"></script>
+        <script src="uiCommons.js"></script>
+        <script id="otherJS"></script>
+    </body>
+</html>

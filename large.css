@@ -1,0 +1,83 @@
+/**CSS file for screen sizes > 820px **/
+
+:root {
+    --header-height: 120px;
+    --min-menu-height: calc(100% - var(--header-height));
+    --menu-from-above: 40px;
+    --menu-button-space: 45px;
+}
+
+
+/*Tags*/
+* {
+    font: 22px "consolas", sans-serif;
+}
+
+header {
+    height: var(--header-height);
+}
+
+
+/*Classes*/
+.alerter {
+    width: 30%;
+}
+.campmarIcon {
+    width: 300px;
+    height: 42px;
+}
+.dashboard {
+    top: 85px;
+    height: 33px;
+}
+.searcherBtn {
+    /*20px wide*/
+    left: 170px;
+}
+.searchBox {
+    left: 218px;
+    width: 200px;
+    text-align: center;
+}
+.searchBox:hover {
+    width: 50%;
+}
+.tile-holder {
+    display: flex;
+    justify-content: center;
+}
+.tile {
+  margin: 10px; 
+}
+.topSpace {
+    height: calc( 5px + var(--header-height ));
+}
+
+
+
+.user-info-tile-holder {
+    width: 600px;
+}
+.user-info-large-tile {
+    width: 300px;
+}
+.user-info-small-tile {
+    width: 240px;
+}
+.user-info-save-btn {
+    bottom: 0px;
+}
+
+/*IDs*/
+#funcPanel button, .searcherBtn, .searchBox {
+    position: absolute;
+}
+
+#funcPanel button:nth-child(1) {
+    left: 20px;
+    /*Each icon is 50px wide at most*/
+}
+#menuBtn {
+    /* menu button */
+    right: 70px; 
+}

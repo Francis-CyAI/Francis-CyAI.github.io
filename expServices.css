@@ -1,0 +1,94 @@
+/* Large screens */
+.service {
+    height: 797px;
+}
+.service * {
+    font-size: 15px;
+}
+.serviceImg {
+    min-width: 400px;
+    max-width: 440px;
+    height: 380px;
+}
+.SD-field {
+    margin: 0;
+    background-color: var(--field-bg-color);
+}
+
+.serviceName {
+    font-size: 16px;
+    padding: 10px;
+    width: 380px;
+}
+.service-dets {
+    width: 380px;
+    padding: 10px;
+}
+.service-contact-btn {
+    width: 380px;
+}
+.service-HT {
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.service-HF {
+    padding-left: 20px;
+    margin-top: -5px;
+}
+.service-HF .SD-field {
+    border-radius: 20px;
+}
+.SHF-field {
+    padding: 2.5px;
+    padding-right: 5px;
+    border-radius: 10px;
+}
+.SHF-B-1 {
+    margin-left: 20px;
+}
+.SHF-B-2 {
+    margin-left: 12px;
+}
+.SHF-B-3 {
+    margin-left: 28px;
+}
+.SHF-B-4 {
+    margin-left: 21px;
+}
+.SC-Btn-H {
+    padding-left: 10px;
+    margin-top: 20px;
+}
+
+
+/* Small screens */
+@media screen and (max-width: 560px) {
+.service {
+    height: 762px;
+}
+.serviceImg {
+    min-width: 300px;
+    max-width: 350px;
+    height: 320px;
+}
+.serviceName {
+    font-size: 15px;
+}  
+.service-locat-info {
+    font-size: 12px;
+}
+.serviceName {
+    font-size: 16px;
+    padding: 10px;
+    width: 280px;
+}
+.service-dets {
+    width: 280px;
+    padding: 10px;
+    font-size: 14px;
+}
+.service-contact-btn {
+    width: 280px;
+}
+}

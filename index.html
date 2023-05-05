@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Francis Kalunga">
+        <meta name="description" content="Campmar aims at maximizing customer outreach within university and college campuses, and outside.">
+        <meta name="keywords" content="university, college, trade, services, clothing, sneakers, phone, smartphone, computer, laptop, accessories, bag, accomodation, unza, cbu, evelyn, mulungushi, cavendish">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="theme-color" content="black">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="stylesheet" href="general.css">
+        <link rel="stylesheet" id="loaderStylesheet" href="loaderStylesheet.css">
+        <!--Theme stylesheet below-->
+        <link rel="stylesheet" id="styleSheetLink" href="">
+        <script src="theme.js"></script>
+        <script src="mainTheme.js" defer></script>
+        <link rel="stylesheet" href="mainCSS.css">
+        <link rel="stylesheet" media="screen and (max-width: 560px)" href="small.css">
+        <link rel="stylesheet" media="screen and (min-width: 560.01px) and (max-width: 820px)" href="medium.css">
+        <link rel="stylesheet" media="screen and (min-width: 820.01px)" href="large.css">
+        <script src="promoted.js" async></script>
+        <script src="activity.js" async></script>
+        <link id="expSservicesCSS" rel="stylesheet" href="">
+        <title>Home</title>
+    </head>
+
+    <body class="bg1">
+        <span class="loader"></span>
+
+        <header class="midBackDropBlur">
+            <img id="siteLogo"  class="campmarIcon" />  
+
+            <div id="funcPanel" class="dashboard">
+                <!--Functionality panel, much like a dashboard-->
+                <button id="logStat" title="log status" class="icon link">
+                    <img id="logStatIcon" src="icons/logged_out_icon.png" class="iconImg" width="25px" height="25px" alt="log"/>
+                </button>
+
+                <input type="button" id="searchBtn" value="Go" class="icon link searcherBtn">
+                <input type="search" placeholder="&#128269; search..." id="searchInput" class="searchBox">
+
+                <button id="menuBtn" title="Menu" class="icon link">
+                    <hr id="line1" class="menuLine mlFirst">
+                    <hr id="line2" class="menuLine mlSecond">
+                </button>
+            </div>
+        </header>
+
+
+        <div id="VMN" class="view-mode-notification">
+            <img id="VMNIcon" class="VMN-icon">
+            <p id="VMMsg" class="VM-msg"></p>
+        </div>
+
+
+        <div id="resultBoard" class="highBackDropBlur resultsBoard">
+            <p>
+                Found: <b id="resultNumber" class="underlined"></b> result(s) &nbsp; &nbsp; 
+                <button id="viewResultBtn" class="underlined link icon">Show</button>
+                &nbsp; &nbsp;<button id="closeBoardBtn" class="link icon">close</button>
+            </p>
+        </div>
+
+
+        <div id="menu" class="midBackDropBlur menuBar">
+            <button class="specialIcon link" id="logBtn" title="User Account">
+                <img id="userIcon" class="iconImg" width="75px" height="75px" alt=" log status" src="" />
+            </button>
+            <button class="specialIcon link" id="themeBtn" title="Switch between Luminary and Eclipse">
+                <img id="themeIcon"  class="iconImg" width="25px" height="25px" src="" />&nbsp; <span id="themeName"></span>
+            </button>
+            <button class="specialIcon link" id="modeBtn" title="Switch between buying and selling">
+                <img id="modeIcon" class="iconImg " width="25px" height="25px" src="" />&nbsp; Mode
+            </button>
+            <button class="specialIcon link" id="catBtn" title="View all categories">
+                <img id="categIcon" class="iconImg " width="25px" height="25px" src="" />&nbsp; Categories
+            </button>
+            <button class="specialIcon link" id="helpBtn" title="Find help on navigation and other">
+                <img id="helpIcon" class="iconImg" width="25px" height="25px" src="" />&nbsp; Help
+            </button>
+            <button class="specialIcon link" id="aboutBtn" title="More about Campmar">
+                <img id="aboutIcon" class="iconImg" width="25px" height="25px" src="" />&nbsp; About
+            </button>
+        </div> 
+
+
+        <div id="searchResultsDH" class="highBackDropBlur search-results-div-holder">
+            <button id="closeSearchWinBtn" class="specialIcon close-btn srcBtn">
+                <img src="icons/close_icon.png" class="close-btn-icon" />
+            </button>
+            <div id="searchResultsDiv" class="itemRowDiv search-results-div"> 
+                <!--Search query items go here-->
+			</div>
+        </div>
+
+
+        <div id="miniMenu" class="midBackDropBlur miniMenuBar">
+            <button id="closeMiniMenuBtn" class="specialIcon close-btn">
+                <img src="icons/close_icon.png" class="close-btn-icon" />
+            </button>
+
+            <div id="contentContainer" class="centerContent mmContainer">
+                
+            </div>
+        </div> 
+
+
+        <div id="navHelpWH" class="midBackDropBlur centeredTB nav-help-win-holder">
+            <a href="javascript:void(0)" onclick="closeNavHelp()" class="specialIcon close-btn">
+                <img src="icons/close_icon.png" class="close-btn-icon" />
+            </a>
+
+            <div id="navHelpWin" class="centered nav-help-win">
+                <ol>
+                    <li>
+                        <a href="#i&s-switch" id="i&s-switchHlLink" class="underlined">Switching between Items and Services</a> 
+                    </li>
+                    <li>
+                        <a href="#vfs" id="vfsHlLink" class="underlined">Viewing Service details</a> 
+                    </li>
+                    <li>
+                        <a href="#upload-i&s" id="upload-i&sHlLink" class="underlined">Uploading Items and Accessing Personal Information</a> 
+                    </li>
+                    <li>
+                        <a href="#log-stat" id="log-statHlLink" class="underlined">Log Status</a> 
+                    </li>
+                    <li>
+                        <a href="#sign-i&u" id="sign-i&uHlLink" class="underlined">Sign In/Up</a>
+                    </li>
+                    </ol>
+                    
+                    <p id="i&s-switch">
+                    To switch views between Items and Services, simply click on either Items or Services in the main section.
+                    </p>
+                    <p id="vfs">
+                    To view the full Service details, simply tap on the service (or any service, or area on the services section) and click the Expanded Service View button, which is the button atop the list. To hide the services details for easier scrolling, simply click on the Retracted View button, which is the button in the middle of the array of the pop-up buttons. To hide the pop-up, simply click on the close (X) button.
+                    </p>
+                    <p id="upload-i&s">
+                    To upload items and services, as well as access your personal information, simply click on the menu icon in the top right part of your screen, and then click on the large, round (User) icon.
+                    </p>
+                    <p id="log-stat">
+                    To view your log status, simply click on the colored, small, round (User) icon in the top left part of your screen.
+                    </p>
+                    <p id="sign-i&u">
+                    To sign up or log in, click on the menu icon then click on the User icon. You will be redirected to the sign in/up page if you're not logged in.
+                    </p>
+            </div>
+        </div>
+
+
+        <div id="cover" class="lowBackDropBlur bgCover"></div>
+
+        
+        <div id="miniCover" class="lowBackDropBlur miniBgCover"></div>
+
+
+        <div id="alertBox" class="alerter">
+            <hr>
+            <p id="alertMsg" class="centerContent message">
+                alert message
+            </p>
+            <hr>
+        </div>
+
+        <div class="midBackDropBlur centerContent switchMenu">
+            <button id="itemsBtn" class="underlined specialIcon switchBtn">
+                Items
+            </button>
+            <span class="middleSpace"></span>
+            <button id="servicesBtn" class="specialIcon switchBtn">
+                Services
+            </button>
+        </div> 
+
+
+        <div class="topSpace"></div>
+
+
+        <div class="main homeMain">
+            <div id="container1" class="container itemsDiv">    
+            </div>
+            
+            <div id="SVBH" class="SVB-holder">
+                <button id="svExpBtn" class="link SV-btn">
+                    <img id="svExpIcon" class="sv-btn-icon" src="" alt="exp" />
+                </button>
+                <button id="svRetBtn" class="link SV-btn">
+                    <img id="svRetIcon" class="sv-btn-icon" src="" alt="ret" />
+                </button>
+                <button id="hvVBBtn" class="link SV-btn">
+                    <img class="sv-btn-icon" src="icons/close_icon.png" alt="view" />
+                </button>
+            </div>
+
+            <div id="container2" class="container sevicesDiv"> 
+            </div>
+        </div>
+
+        <div class="footer">
+            <p class="specialText1">Zambia</p>
+            <p class="specialText1">Copyright &copy; 2023 Campmar, Inc. All rights reserved.</p>
+            <nav>
+            <a class="noUnderline link specialText1" href="privacy_policy.html">Privacy Policy &nbsp; | &nbsp; </a>
+            <a class="noUnderline link specialText1" href="terms_of_use.html">Terms of Use</a>
+            </nav>
+        </div>
+        
+        <script src="control.js"></script>
+        <script src="mainControl.js" async></script>
+
+        <script src="ui.js"></script>
+        <script src="mainUi.js"></script>
+        <script src="uiCommons.js"></script>
+
+        <script id="otherJS">
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,129 @@
+:root {
+    --default-color: #ddd;
+    --default-bg-color: #01111D;
+    --tip-text-green: rgb(40, 238, 0);
+
+    --bg-gradient-color-1: rgb(48, 57, 75);
+    --bg-gradient-color-2: rgb(107, 103, 145);
+
+    --field-bg-color: rgba(48, 57, 75, .2);
+
+    --loader-outer-color: var(--default-color);
+    --loader-inner-color: rgb(26, 230, 60);
+}
+
+* {
+    color: var(--default-color);
+}
+.add-tip-text {
+    color: rgb(87, 252, 54);  
+}
+.add-input {
+    background-color: #12222F;
+}
+.alerter {
+    background-color: var(--default-bg-color);
+    color: white;
+}
+.alerter p {
+    color: white;
+    font-size: 22px;
+}
+.specialText1 {
+    color: rgb(255, 255, 255);
+}
+.bg-special {
+    background: -webkit-radial-gradient(circle farthest-corner at bottom left, var(--bg-gradient-color-1), var(--bg-gradient-color-2), var(--bg-gradient-color-1));
+    background: radial-gradient(circle farthest-corner at bottom left, var(--bg-gradient-color-1), var(--bg-gradient-color-2), var(--bg-gradient-color-1));
+}
+.bg1 {
+    background-color: var(--default-bg-color);
+}
+.bg2 {
+    background-color: #888;
+}
+.bg3 {
+    background-color: rgb(0, 0, 0);
+}
+.bg4 {
+    background-color: rgb(90, 90, 90);
+}
+.cartForm input {
+    border-color: var(--default-color);
+}
+.cartItemDets input {
+    background-color: rgb(120, 120, 130);
+}
+.log-div * {
+    color: #888;
+}
+.log-div {
+    background-color: #888;
+}
+.logBackBtn {
+    color: #ccc;
+}
+.logForm label {
+    color: #888;
+}
+.logInput {
+    background-color: #ddd;
+    color: gray;
+}
+.logGoBtn {
+    border-color: #888;
+    color: #888;
+}
+.searchBox, .searcherBtn {
+    color: darkgray;
+    border: 2px darkgray solid;
+}
+.searchBox {
+    background-color: rgba(48, 57, 75, .2);
+}
+.sign-bg {
+    background-color: #01111D;
+}
+.signBtn, .formHolder {
+    background-color: #bbb;
+}
+.signBtn:nth-child(1) {
+    background-color: #bbb;
+    color: #888;
+}
+.signBtn:nth-child(2) {
+    background-color: #888;
+    color: #ddd;
+}
+.SVB-holder, .SV-btn {
+    background-color: rgba(48, 57, 75, .8);
+} 
+.view-mode-notification {
+    background-color: #01111D;
+}
+/*
+.logInput {
+    background-color: rgb(226, 226, 226);
+    color: rgb(90, 90, 90);
+}
+.logGoBtn {
+    border-color: var(--default-color);
+    color: var(--default-color);
+}
+.searchBox, .searcherBtn {
+    color: lightgray;
+    border: 2px lightgray solid;
+}
+.searchBox:focus {
+    color: rgb(100, 100, 70);
+}
+.signBtn, .formHolder {
+    background-color: #aaa;
+}
+.signBtn:nth-child(2) {
+    background-color: #888;
+}
+*/
+
+
+/*IDs*/

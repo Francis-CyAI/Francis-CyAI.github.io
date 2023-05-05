@@ -1,0 +1,577 @@
+:root {
+    --control-tab-top: 150px;
+    --control-tab-height: 300px;
+    --control-tab-width: 60%;
+    --crl-tab-surround-width: calc(100px + var(--control-tab-width));
+    --ctrl-tab-surround-top: 125px;
+    --ctrl-tab-surround-height: calc(var(--control-tab-height) * 2 - 70px);
+    --ctrl-tile-dimension: 170px;
+    --default-color-2: #dddddd;
+    --gradient-color-1: #01111D;
+    --gradient-color-2: rgb(48, 57, 75);
+}
+
+
+/* Tags */
+
+
+/* Classes */
+
+.add-window-holder {
+    width: 500px;
+    height: 650px;
+    border-radius: 30px;
+    border: 2px solid var(--default-color);
+    opacity: 0;
+    z-index: -1;
+}
+.add-window-holder * {
+    position: absolute;
+}
+.add-tip-text {
+    font-size: 13px;
+    color: var(--tip-text-green);  
+    top: 35px;
+    width: 100%;
+}
+.add-form {
+    top: 70px;
+    left: 10px;
+    width: calc(100% - 20px);
+    height: calc(100% - 130px);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.add-form label, .add-input {
+    color: var(--default-color);
+    font-size: 16px;
+    left: 5px;
+}
+.add-form label {
+    height: var(--form-label-height);
+    max-width: calc(100% - 10px);
+}
+.add-input {
+    min-width: 20px;
+    max-width: fit-content;
+    height: 22px;
+    top: 25px;
+    border-radius: 10px;
+    border-color: transparent;
+}
+.add-text-area, .add-service-input {
+    min-width: 400px;
+}
+.add-text-area {
+    height: 60px;
+}
+.add-img-input {
+    overflow-y: hidden;
+    overflow-x: auto;
+    width: 250px;
+    height: 25px;
+    border-radius: 0;
+}
+.add-btn-holder, .add-deliv-opt-holder {
+   width: calc(100% - 10px);
+}
+.add-btn {
+    width: 40px;
+    height: 30px;
+    background-color: transparent;
+    color: var(--default-color);
+    border: 1px solid var(--default-color);
+    border-color: var(--default-color);
+    border-radius: 15px;
+}
+.add-plus-size-btn {
+    right: 10px;
+}
+.add-go-btn {
+    right: 40px;
+    bottom: 15px;
+}
+.add-plus-btn {
+    height: 30px;
+    font-size: 17px;
+}
+.add-special-input {
+   top: 30%;
+   transform: translateY(-50%);
+}
+.add-name {
+    width: 135px;
+}
+.add-number {
+    width: 75px;
+}
+.add-left-sided-btn {
+    left: 85px;
+}
+.add-right-sided-btn {
+    left: 175px;
+}
+.add-hours-label {
+    top: 50%;
+    transform: translateY(60%);
+}
+.add-label-p {
+    font-size: 14px;
+    width: fit-content;
+}
+.add-time-from {
+    left: 90px;
+}
+.add-time-sep {
+    position: absolute;
+    left: 155px;
+}
+.add-time-to {
+    left: 180px;
+} 
+.add-p {
+    top: 10%;
+    transform: translateY(-80%);
+}
+.add-in {
+    top: 30%;
+    width: 45px;
+    transform: translateY(-50%);
+}
+
+:root {
+    --add-space-difference: 20px;
+}
+.add-form label:nth-child(1) {
+    top: calc(1 * var(--add-space-difference) + 0 * var(--form-label-height));
+}
+.add-form label:nth-child(2) {
+    top: calc(2 * var(--add-space-difference) + 1 * var(--form-label-height));
+}
+.add-form label:nth-child(3) {
+    top: calc(3 * var(--add-space-difference) + 2 * var(--form-label-height));
+}
+.add-form label:nth-child(4) {
+    top: calc(4 * var(--add-space-difference) + 3 * var(--form-label-height));
+}
+.add-form label:nth-child(5) {
+    top: calc(5 * var(--add-space-difference) + 4 * var(--form-label-height));
+}
+.add-form label:nth-child(6) {
+    top: calc(6 * var(--add-space-difference) + 5 * var(--form-label-height));
+}
+.add-form label:nth-child(7) {
+    top: calc(7 * var(--add-space-difference) + 6 * var(--form-label-height));
+}
+.add-form label:nth-child(8) {
+    top: calc(8 * var(--add-space-difference) + 7 * var(--form-label-height));
+}
+.add-form label:nth-child(9) {
+    top: calc(9 * var(--add-space-difference) + 8 * var(--form-label-height));
+}
+.add-form label:nth-child(10) {
+    top: calc(10 * var(--add-space-difference) + 9 * var(--form-label-height));
+}
+.add-form label:nth-child(11) {
+    top: calc(11 * var(--add-space-difference) + 10 * var(--form-label-height));
+}
+.add-header {
+    top: -5px;
+    font-weight: bold;
+}
+.control-tab, .surround, .tile, .tile-holder {
+    position: absolute;
+}
+.control-tab, .surround, .tile-holder {
+    border-radius: 20px;
+    border-color: transparent;
+}
+.control-tab, .tile-holder, .control-tab-surround {
+    left: 50%;
+    transform: translateX(-50%);
+}
+.control-tab, .tile {
+    z-index: 1;
+}
+.control-tab {
+    top: var(--control-tab-top);
+    width: var(--control-tab-width);
+    height: var(--control-tab-height);
+    border-radius: 30px;
+}
+.control-tab-surround {
+    width: var(--crl-tab-surround-width);
+    top: var(--ctrl-tab-surround-top);
+    height: var(--ctrl-tab-surround-height);
+    border-radius: 45px;
+}
+.control-visual-info-port, .control-info-tile {
+    position: absolute;
+}
+.control-visual-info-port {
+    top: 20px;
+    width: calc(30px + 3 * var(--ctrl-tile-dimension));
+    height: calc(2 * 10px + 1 * var(--ctrl-tile-dimension));
+    border-radius: 25px;
+    display: flex;
+}
+.control-info-tile {
+    position: absolute;
+    top: 10px;
+    width: var(--ctrl-tile-dimension);
+    height: var(--ctrl-tile-dimension);
+    background-color: black;
+    border-radius: 20px;
+    padding: 1px;
+}
+.control-info-tile:nth-child(1) {
+    left: calc(1 * 10px + 0.5 * var(--ctrl-tile-dimension));
+}
+.control-info-tile:nth-child(2) {
+    left: calc(2 * 10px + 1.5 * var(--ctrl-tile-dimension));
+}
+.control-info-icon {
+    position: absolute;
+    top: 10px;
+    width: 90px;
+    height: 90px;
+}
+.control-info-h-line, .control-info-p-line {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    color: #ddd;
+    font-size: 17px;
+}
+.control-info-h-line {
+    top: 90px;
+}
+.control-info-p-line {
+    top: 115px;
+}
+.dashboard {
+    height: 25px;
+    bottom: 7px;
+}
+.del-alert {
+    z-index: -1;
+    opacity: 0;
+    border-radius: 30px;
+}
+.del-btn-holder {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+.del-btn {
+    color: white;
+    border-color: transparent;
+    margin: 5px;
+    border-radius: 15px;
+}
+:root {
+    --del-red: rgb(204, 0, 0); 
+    --del-green: rgb(0, 207, 17);
+}
+.del-yes-btn {
+    background-color: var(--del-red);
+}
+.del-cancel-btn {
+    background-color: var(--del-green);
+}
+
+.logFooter {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+@media screen and (max-height: 650px) {
+    .logFooter {
+        bottom: -300px;
+    }
+}
+@media screen and (min-height: 650.01px) and  (max-height: 760px) {
+    .logFooter {
+        bottom: -200px;
+    }
+}
+@media screen and (min-height: 760.01px) and (max-height: 860px) {
+    .logFooter {
+        bottom: -150px;
+    }
+}
+.miniMenuBar * {
+    color: var(--default-color-2);
+}
+.notif-window {
+    width: 500px;
+    height: 650px;
+    opacity: 0;
+    z-index: -1;
+}
+.notif-window * {
+    position: absolute;
+}
+.notif-window h2 {
+    top: 30px;
+    background-color: black;
+    width: 95%;
+}
+.notif-window p {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 17px;
+    top: 60px;
+    width: 90%;
+    color: var(--tip-text-green);
+}
+.notif-item-holder-cover {
+    /* temporal cover */
+    top: 150px;
+    left: 5%;
+    width: 25px;
+    height: calc(100% - (150px + 50px));
+}
+.notif-item-holder {
+    top: 150px;
+    left: 5%;
+    width: 90%;
+    height: calc(100% - (150px + 50px));
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.notif-info-save-btn {
+    width: 300px;
+    height: 30px;
+    bottom: 10px;
+    font-size: 20px;
+    border: 1px solid var(--default-color-2); 
+    border-radius: 20px;
+    background-color: var(--default-color-2);
+    color: rgb(74, 68, 102);
+}
+.notif-item {
+    width: 90%;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.notif-cb, .notif-label {
+    top: 0;
+}
+.notif-cb {
+    left: 0;
+    background-color: #eee;
+}
+.notif-label {
+    left: 30px;
+}
+.notif-item:nth-child(1) {
+    top: calc(0 * 40px);
+}
+.notif-item:nth-child(2) {
+    top: calc(1 * 40px);
+}
+.notif-item:nth-child(3) {
+    top: calc(2 * 40px);
+}
+.notif-item:nth-child(4) {
+    top: calc(3 * 40px);
+}
+.notif-item:nth-child(5) {
+    top: calc(4 * 40px);
+}
+.notif-item:nth-child(6) {
+    top: calc(5 * 40px);
+}
+.notif-item:nth-child(7) {
+    top: calc(6 * 40px);
+}
+.notif-item:nth-child(8) {
+    top: calc(7 * 40px);
+}
+
+.surround, .tile-holder {
+    backdrop-filter: blur(2000px);
+    -webkit-backdrop-filter: blur(2000px);
+}
+.tile-holder {
+    top: calc(var(--control-tab-height) +var(--control-tab-top) + 50px);
+    height: 120px;
+    width: calc(9 * 10px + 6 * var(--tile-dimension)); 
+    border-radius: 20px;
+}
+.tile {
+    width: var(--tile-dimension);
+    height: var(--tile-dimension);
+    border-radius: 20px;
+    color: black;
+    background-color: #ddd;
+    border-color: transparent;
+}
+.tile {
+    top: 10px; 
+}
+.title-icon {
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    color: black;
+}
+.tile:nth-child(1) {
+    left: calc(1 * 10px + 0 * var(--tile-dimension));
+}
+.tile:nth-child(2) {
+    left: calc(2 * 10px + 1 * var(--tile-dimension));
+}
+.tile:nth-child(3) {
+    left: calc(3 * 10px + 2 * var(--tile-dimension));
+}
+.tile:nth-child(4) {
+    left: calc(4 * 10px + 3 * var(--tile-dimension));
+}
+.tile:nth-child(5) {
+    left: calc(5 * 10px + 4 * var(--tile-dimension));
+}
+.tile:nth-child(6) {
+    left: calc(6 * 10px + 5 * var(--tile-dimension));
+}
+.userText1 {
+    color: var(--default-color-2);
+}
+.userBody {
+    background: -webkit-radial-gradient(circle farthest-corner at bottom left, var(--gradient-color-1), var(--gradient-color-2), var(--gradient-color-1));
+    background: radial-gradient(circle farthest-corner at bottom left, var(--gradient-color-1), var(--gradient-color-2), var(--gradient-color-1));
+}
+.user-name {
+    position: absolute;
+    left: 90px;
+    top: -18px;
+}
+.user-info-div {
+    z-index: -1; 
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    
+}
+.user-info-div * {
+    position: absolute;
+    color: var(--default-color-2);
+}
+.user-info-tile-holder {
+    width: 400px;
+    min-height: 600px;
+    top: 10px;
+    overflow-y: auto;
+}
+.user-info-save-btn {
+    width: 300px;
+    height: 30px;
+    top: 600px;
+    font-size: 20px;
+    border: 1px solid var(--default-color-2); 
+    border-radius: 20px;
+    background-color: var(--default-color-2);
+    color: rgb(74, 68, 102);
+}
+.user-info-large-tile {
+    top: 50px;
+    width: 200px;
+    height: 160px;
+}
+.user-info-large-icon {
+    top: 5px;
+    width: 100px;
+    height: 100px;
+}
+.user-info-small-tile {
+    width: 170px;
+    height: 140px;
+
+}
+.user-info-small-icon {
+    top: 2px;
+    width: 65px;
+    height: 65px;
+    font-size: 16px;
+}
+.user-info-field, .user-info-title { 
+    left: 0.5%;
+    width: 99%;
+    background-color: transparent;
+    border-color: transparent;
+}
+.user-info-title {
+    bottom: 15px;
+    font-size: 13px;
+}
+.user-info-field {
+    bottom: -16px;
+    font-size: 15px;
+}
+.u-s-t-4 {
+    height: 155px;
+}
+.u-s-t-4 .user-info-title {
+    bottom: 40px;
+}
+ .u-s-t-4 .user-info-field {
+    bottom: 9px;
+}
+.pw-view-label {
+    position: absolute;
+    bottom: 0;
+    font-size: 14px;
+    right: 103px;
+} 
+.u-s-t-1, .u-s-t-2 {
+    top: 240px;
+}
+.u-s-t-3, .u-s-t-4 {
+    top: 400px;
+}
+.u-s-t-1, .u-s-t-3 {
+    left: 5px;
+}
+.u-s-t-2, .u-s-t-4 {
+    right: 5px;
+}
+
+
+
+
+/* IDs */
+#menu button:nth-child(1) {
+    top: var(--menu-from-above);
+    top: calc(var(--menu-from-above) + 30px);
+}
+#menu button:nth-child(2) {
+    top: calc(var(--menu-from-above) + 45px + 30px);
+}
+#menu button:nth-child(3) {
+    /* Mode button */
+    top: calc(var(--menu-from-above) + 2 * 45px + 30px);
+}
+#menu button:nth-child(4) {
+    /* Category button */
+    top: calc(var(--menu-from-above) + 3 * 45px + 30px);
+}
+#menu button:nth-child(5) {
+    /* Help button */
+    top: calc(var(--menu-from-above) + 4 * 45px + 30px);
+}
+#menu button:nth-child(6) {
+    /* About button */
+    top: calc(var(--menu-from-above) + 5 * 45px + 30px) ;
+}

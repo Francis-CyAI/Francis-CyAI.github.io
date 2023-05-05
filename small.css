@@ -1,0 +1,316 @@
+/**CSS file for screen sizes <= 560px**/
+
+/*constants*/
+:root {
+    --header-height: 80px;
+    --min-menu-height: calc(100% - var(--header-height));
+    --menu-from-above: 40px;
+    --menu-button-space: 45px;
+    --cat-from-top: 50px;
+
+    
+    --control-tab-top: 110px;
+    --control-tab-height: 250px;
+    --control-tab-width: calc(3 * 8px + 2 * 120px);/*68%*/
+    --ctrl-tab-surround-top: 95px;
+    --ctrl-tab-surround-dimension: 280px;
+    --ctrl-tile-dimension: 120px;
+    --tile-dimension: 70px;
+
+}
+
+
+/* Tags */
+* {
+    font: 16px "consolas", sans-serif;
+}
+
+
+
+/*Classes*/
+.add-text-area, .add-service-input {
+    min-width: 250px;
+}
+.add-time-sep {
+    margin-top: 5px;
+}
+.add-text-area {
+    height: 100px;
+}
+.alerter {
+    width: 70%;
+    border-radius: 20px;
+}
+.campmarIcon {
+    width: 120px;
+    height: 20px;
+}
+.cartCloser {
+    right: 10px;
+    top: 0;
+}
+.add-window-holder {
+    width: 95%;
+    height: 98%;
+    border-radius: 20px;
+}
+.clartItemImg {
+    top: 5px;
+}
+.cartForm label:nth-child(1), .outFirst {
+    top: 10px;
+}
+.cartForm label:nth-child(2), .outSec {
+    top: 30px;
+}
+.cartForm input {
+    top: 55px;
+}
+.cartFormOut {
+    left: 80px;
+}
+.control-tab {
+    top: var(--control-tab-top);
+    width: var(--control-tab-width);
+    height: var(--control-tab-height);
+    border-radius: 30px;
+
+}
+.control-tab-surround {
+    top: var(--ctrl-tab-surround-top);
+    width: var(--ctrl-tab-surround-dimension);
+    height: var(--ctrl-tab-surround-dimension);
+    border-radius: 35px;
+}
+.control-visual-info-port {
+    top: 10px;
+    width: calc(3 * 10px + 2 * var(--ctrl-tile-dimension));
+    height: calc(3 * 10px + 2 * var(--ctrl-tile-dimension));
+}
+.control-info-tile {
+    top: -10px;
+    height: calc(2 * var(--ctrl-tile-dimension) + 10px);
+}
+.control-info-tile:nth-child(1) {
+    left: 10px;
+}
+.control-info-tile:nth-child(2) {
+    left: calc(2 * 10px + 1 * var(--ctrl-tile-dimension));
+}
+.control-info-icon {
+    position: absolute;
+    top: 30px;
+    width: 50px;
+    height: 50px;
+}
+.control-info-h-line, .control-info-p-line {
+    font-size: 13px;
+}
+.control-info-h-line {
+    top: 110px;
+}
+.control-info-p-line {
+    top: 150px;
+    font-size: 18px;
+}
+.dashboard {
+    height: 25px;
+    bottom: 7px;
+}
+.formHolder {
+    height: 280px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.gip-campmar-icon {
+    height: 35px;
+}
+.gip-sub-heading, .gip-text {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.info-footer {
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.log-div {
+    top: 50px;
+    width: 320px;
+    height: 373px;
+    border-radius: 15px;
+}
+.logForm label, .logForm label * {
+    font-size: 16px;
+}
+.logForm label, .log-locat-cover {
+    left: 10px;
+}
+.logInput {
+    width: 140px;
+}
+.logGoBtn {
+    top: 120px;
+    right: 63px;
+}
+#signupForm .logGoBtn {
+    top: 230px;
+    right: 28px;
+}
+.logFooter {
+    width: calc(100% - 20px);
+}
+.mmContainer {
+    display: flex;
+    justify-content: center;
+}
+.nav-help-win {
+    width: 96%;
+}
+.notif-window {
+    width: 90%;
+    height: 90%;
+}
+.notif-item-holder-cover {
+    /* temporal cover */
+    top: 130px;
+    height: calc(100% - (130px + 50px));
+}
+.notif-item-holder {
+    top: 130px;
+    height: calc(100% - (130px + 50px));
+
+}
+.notif-window p {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 15px;
+}
+.notif-info-save-btn {
+    width: 200px;
+}
+
+.searcherBtn {
+    /*20px wide*/
+    left: 70px;
+}
+.searchBox {
+    left: 118px;
+    width: 45px;
+    text-align: center;
+}
+.searchBox:hover {
+    width: 130px;
+}
+.tile-holder {
+    width: calc(40px + 3 * var(--tile-dimension));
+    height: calc(3 * var(--tile-dimension) - 40px);
+    border-radius: 30px;
+}
+.tile:nth-child(1), .tile:nth-child(2), .tile:nth-child(3) {
+    top: calc(1 * 10px + 0 * var(--tile-dimension));
+}
+.tile:nth-child(4), .tile:nth-child(5), .tile:nth-child(6) {
+    top: calc(2 * 10px + 1 * var(--tile-dimension));
+}
+.tile:nth-child(1), .tile:nth-child(4) {
+    left: calc(1 * 10px + 0 * var(--tile-dimension));
+}
+.tile:nth-child(2), .tile:nth-child(5) {
+    left: calc(2 * 10px + 1 * var(--tile-dimension));
+}
+.tile:nth-child(3), .tile:nth-child(6) {
+    left: calc(3 * 10px + 2 * var(--tile-dimension));
+}
+.user-name {
+    left: 60px;
+    top: -10px;
+}
+
+.user-info-tile-holder {
+    width: 100%;
+}
+@media screen and (min-height: 700px) {
+    .user-info-save-btn {
+        top: 670px
+    }
+}
+.user-info-large-tile {
+    width: 250px;
+    height: 150px;
+}
+.user-info-small-tile {
+    width: 150px;
+    height: 120px;
+}
+.user-info-large-icon {
+    top: 5px;
+    width: 90px;
+    height: 90px;
+}
+.user-info-small-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 15px;
+}
+.u-s-t-4 {
+    height: 145px;
+}
+.pw-view-label {
+    right: 60px;
+}
+.view-mode-notification {
+    width: 100%;
+}
+
+
+
+/*IDs*/
+#contentContainer .specialDiv .specialA {
+    width: 100%;
+    padding-left: 20px;
+}
+#contentContainer .specialDiv:nth-child(1), .firstOpt {
+    top: 0px;
+}
+#contentContainer .specialDiv:nth-child(2), .secondOpt {
+    top: calc(1 * var(--cat-from-top));
+}
+#contentContainer .specialDiv:nth-child(3), .thirdOpt {
+    top: calc(2 * var(--cat-from-top));
+}
+#contentContainer .specialDiv:nth-child(4), .fourthOpt {
+    top: calc(3 * var(--cat-from-top));
+}
+#contentContainer .specialDiv:nth-child(5), .fifthOpt {
+    top: calc(4 * var(--cat-from-top));
+}
+#contentContainer .specialDiv:nth-child(6), .sixthOpt {
+    top: calc(5 * var(--cat-from-top));
+}
+#contentContainer .specialDiv:nth-child(7), .seventhOpt {
+    top: calc(6 * var(--cat-from-top));
+}
+#contentContainer .specialDiv:nth-child(8), .eigthOpt {
+    top: calc(7 * var(--cat-from-top));
+}
+#contentContainer .specialDiv:nth-child(9), .ninethOpt {
+    top: calc(8 * var(--cat-from-top));
+}
+#contentContainer .specialDiv:nth-child(10), .tenthOpt {
+    top: calc(9 * var(--cat-from-top));
+}
+#contentContainer .specialDiv a:nth-child(odd) {
+    left: 20px;
+}
+#funcPanel button, .searcherBtn, .searchBox {
+    position: absolute;
+}
+
+#funcPanel button:nth-child(1) {
+    left: 5px;
+    /*Each icon is 50px wide at most*/
+}
+#menuBtn {
+    /* menu button */
+    right: 25px; 
+}

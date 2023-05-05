@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Francis Kalunga">
+    <meta name="description" content="Campmar aims at maximizing customer outreach within university and college campuses, and outside.">
+    <meta name="theme-color" content="black">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="general.css">
+    <!--Theme stylesheet below-->
+    <link id="styleSheetLink" rel="stylesheet" href="">
+    <script src="theme.js"></script>
+    <script src="userTheme.js"></script>
+    <link rel="stylesheet" href="signCSS.css">
+    <link rel="stylesheet" media="screen and (max-width: 560px)" href="small.css">
+    <link rel="stylesheet" media="screen and (min-width: 560.01px) and (max-width: 820px)" href="medium.css">
+    <link rel="stylesheet" media="screen and (min-width: 820.01px)" href="large.css">
+</head>
+
+<body class="sign-bg">
+    <div id="logDiv" class="bg2 log-div centered">
+        <button id="logBackBtn" class="specialIcon link logBackBtn">
+            &larr;
+        </button>
+        <span class="sign-span centered">
+            <button id="signinFormBtn" class="link signBtn">
+            Sign In
+            </button>
+            <button id="signupFormBtn" class="link signBtn">
+            Sign Up
+            </button>
+        </span>
+       
+        <div class="centered formHolder">
+            <form id="signinForm" class="logForm">
+                <label>User*: &nbsp; <input id="signInUsername" type="text" class="logInput" placeholder="username" required></label>
+                <label>Pass*: &nbsp; <input id="signInPassword" type="password" class="logInput" placeholder="password" required></label>
+                <input type="submit" value="Go"  id="signinBtn" class="logGoBtn link">
+            </form>
+            <form id="signupForm" class="logForm">
+                <label>Username: &nbsp; <input id="userName" name="user-name" type="text" class="logInput" placeholder="username"></label>
+                <label>WhatsApp No: &nbsp; <input id="waNum" name="wa-num" type="text" class="logInput log-num-input" placeholder="07********"></label>
+                <label>Password*: &nbsp; <input id="password" name="pass-w" type="password" class="logInput" placeholder="create" required></label>
+                <label>Membership*: &nbsp; 
+                    <select name="membership-choice" class="logInput log-select" id="logMembershipChoice" required>
+                        <option label="Choose" value="">
+                        <option label="Non-Student" value="non-stu">
+                        <option label="Student" value="student">
+                    </select>
+                </label>
+                <label id="logLocatLabel" class="log-locat-label">Location: &nbsp; 
+                    <select name="loc-choice" class="logInput log-select" id="logLocatChoice">
+                        <option label="Choose" value="">
+                        <option label="UNZA" value="unza">
+                        <option label="Other" value="other">
+                    </select>
+                </label>
+                <label id="otherLocatChoice">
+                </label>
+                <span id="LLSCover" class="log-locat-cover"></span>
+                <input type="submit" value="Go" id="signupBtn" class="logGoBtn link">
+            </form>
+        </div>
+    </div>
+
+    <script src="control.js"></script>
+    <script src="signControl.js"></script>
+    <script id="otherJS"></script>
+</body>
+</html>
