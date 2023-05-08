@@ -120,3 +120,7 @@
     top: 250px;
     right: 25px;
 }
+
+@media screen and (max-width: 420px) {
+
+}
